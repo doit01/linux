@@ -2,6 +2,8 @@
  ls -lh 查看当前目录文件大小
  du -sh 看当前总的大小
 /var/log
+df -h
+du -h –max-depth=1 * 看每个文件大小
 
 unmount mount
 https://blog.csdn.net/weixin_34234823/article/details/89941421
