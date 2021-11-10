@@ -1,3 +1,4 @@
+df /var/lib/ -kh  查看挂载
 netstat -aon|findstr "80"
 docker-compose -f src/main/docker/redis.yml up -d
 
