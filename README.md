@@ -9,9 +9,14 @@ du -h –max-depth=1 * 看每个文件大小
  
 unmount mount
 https://blog.csdn.net/weixin_34234823/article/details/89941421
+df /usr/local -kh
 df /var/lib/ -kh  查看挂载
 df /var/lib/docker -kh
+for harbor
+ mount /dev/mapper/centos-home /data
+ 
 mount /dev/mapper/centos-home /var/lib/docker
+
 netstat -aon|findstr "80"
 docker-compose -f src/main/docker/redis.yml up -d
 
