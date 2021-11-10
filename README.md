@@ -1,3 +1,7 @@
+ ls -lh 查看当前目录文件大小
+ du -sh 看当前总的大小
+
+
 unmount mount
 https://blog.csdn.net/weixin_34234823/article/details/89941421
 df /var/lib/ -kh  查看挂载
