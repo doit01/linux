@@ -4,10 +4,14 @@
 /var/log
 df -h
 du -h –max-depth=1 * 看每个文件大小
-
+对于10机器
+/var/lib/docker/overlay2存的是镜像
+ 
 unmount mount
 https://blog.csdn.net/weixin_34234823/article/details/89941421
 df /var/lib/ -kh  查看挂载
+df /var/lib/docker -kh
+mount /dev/mapper/centos-home /var/lib/docker
 netstat -aon|findstr "80"
 docker-compose -f src/main/docker/redis.yml up -d
 
