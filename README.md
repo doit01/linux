@@ -1,3 +1,14 @@
+ 让ssh客户端不断
+ root@10.28.140.46:~# sed -i "s/#ClientAliveInterval 0/ClientAliveInterval 60/g" /etc/ssh/sshd_config
+root@10.28.140.46:~# sed -i "s/#ClientAliveCountMax 3/ClientAliveCountMax 5/g" sshd_config
+sed: can't read sshd_config: No such file or directory
+root@10.28.140.46:~# sed -i "s/#ClientAliveCountMax 3/ClientAliveCountMax 5/g" /etc/ssh/sshd_config
+root@10.28.140.46:~# service sshd restart
+Restarting sshd (via systemctl):  Warning: sshd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+                                                           [  OK  ]
+root@10.28.140.46:~# systemctl daemon-reload
+
+
  清理系统垃圾文件
  ls -lh 查看当前目录文件大小
  du -sh 看当前总的大小
