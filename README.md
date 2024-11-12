@@ -1,3 +1,6 @@
+systemd对应的进程管理命令就是systemctl
+Linux 服务管理有两种方式service和systemctl。而systemd是Linux系统最新的初始化系统(init)，作用是提高系统的启动速度
+ 
  让ssh客户端不断
  root@10.28.140.46:~# sed -i "s/#ClientAliveInterval 0/ClientAliveInterval 60/g" /etc/ssh/sshd_config
 root@10.28.140.46:~# sed -i "s/#ClientAliveCountMax 3/ClientAliveCountMax 5/g" sshd_config
