@@ -6,6 +6,24 @@ Linux 服务管理有两种方式service和systemctl。而systemd是Linux系统�
 systemctl -t service #查看活动的系统服务
 
 systemctl -t service --all #列出所有系统服务(包括不活跃的)
+    Loaded行：配置文件的位置，是否设为开机启动
+
+    Active行：表示正在运行
+
+    Main PID行：主进程ID
+
+    Status行：由应用本身提供的软件当前状态
+
+    CGroup块：应用的所有子进程
+
+    日志块：应用的日志
+
+[root@wangwu ~]# systemctl stop httpd
+
+    1
+
+[root@wangwu ~]# systemctl status httpd
+
 
 
 
